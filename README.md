@@ -18,7 +18,7 @@ Click the **Fork** button at the top right of the repository to create your own 
 ### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/<your-username>/real-time-communication-with-socket-io-KyUCOMRADE.git
+git clone https://github.com/KyUCOMRADE/real-time-communication-with-socket-io-KyUCOMRADE.git
 cd real-time-communication-with-socket-io-KyUCOMRADE
 
 # Run backend
