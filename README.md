@@ -116,11 +116,11 @@ We used **UptimeRobot** to monitor both frontend and backend uptime and performa
 
 ### 🔹 Frontend Monitoring (Vercel)
 
-![Frontend Monitoring](./screenshots/frontend_monitoring.png)
+![Frontend Monitoring](./screenshots/frontend_monitoring.jpg)
 
 ### 🔹 Backend Monitoring (Render)
 
-![Backend Monitoring](./screenshots/backend_monitoring.png)
+![Backend Monitoring](./screenshots/backend_monitoring.jpg)
 
 - Both monitors check uptime every 5 minutes.
 - Alert notifications are sent on downtime.
