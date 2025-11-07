@@ -1,77 +1,146 @@
-# Deployment and DevOps for MERN Applications
+# 🚀 MERN App Deployment & CI/CD Setup
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+---
 
-## Assignment Overview
+# 🤝 Contributing Guidelines
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+Thank you for your interest in contributing to this project!  
+Contributions, issues, and feature requests are always welcome.
 
-## Getting Started
+---
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+## 🧠 How to Contribute
 
-## Files Included
+### 1. Fork the Repository
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+Click the **Fork** button at the top right of the repository to create your own copy.
 
-## Requirements
+### 2. Clone Your Fork
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
+```bash
+git clone https://github.com/<your-username>/real-time-communication-with-socket-io-KyUCOMRADE.git
+cd real-time-communication-with-socket-io-KyUCOMRADE
 
-## Deployment Platforms
+# Run backend
+cd backend
+npm install
+npm run dev
 
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
+# Run frontend
+cd frontend
+npm install
+npm start
+```
+---
 
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
+## 🚀 Deployment Instructions
 
-## CI/CD Pipeline
+### Backend (Render)
 
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
+1. Push your backend code to GitHub.  
+2. Create a new Render Web Service.  
+3. Connect GitHub repository.  
+4. Set environment variables on Render dashboard.  
+5. Deploy the service.  
+6. Enable HTTPS and monitoring.
 
-## Submission
+### Frontend (Vercel)
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+1. Push your frontend code to GitHub.  
+2. Import project on Vercel.  
+3. Set build settings (`npm install`, `npm run build`) and environment variables.  
+4. Deploy.  
+5. Optional: Configure custom domain and caching strategies.
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+---
 
-## Resources
+## ✅ Build Status
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+  -----------------------------------------------------------------------------------------------------------------------------------
+  Service                               Status
+  ------------------------------------- ---------------------------------------------------------------------------------------------
+  **Frontend (Vercel)**                 ![Frontend
+                                        CI](https://github.com/KyUCOMRADE/real-time-communication-with-socket-io-KyUCOMRADE/actions/workflows/frontend.yml/badge.svg)
+
+**Backend (Render)**                  ![Backend
+                                        CI](https://github.com/KyUCOMRADE/real-time-communication-with-socket-io-KyUCOMRADE/actions/workflows/backend.yml/badge.svg)
+  -----------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## 🧩 CI/CD Screenshots
+
+### 1. GitHub Actions Overview
+
+![Actions Overview](./screenshots/actions-overview.jpg)
+
+### 2. Frontend CI Successful Run
+
+![Frontend CI Success](./screenshots/frontend-ci-success.jpg)
+
+### 3. Backend CI Successful Run
+
+![Backend CI Success](./screenshots/backend-ci-success.jpg)
+
+### 4. Deployed App Previews
+
+**Frontend (Vercel):**
+<https://real-time-communication-with-socket-ten.vercel.app>
+
+![Frontend Deployment](./screenshots/deployment-preview.jpg)
+
+**Backend (Render):** <https://chat-app-v6gy.onrender.com>
+
+------------------------------------------------------------------------
+----------
+
+---
+
+# 🔧 Environmental Variables
+
+### Backend (.env)
+
+MONGO_URI=your_mongodb_connection_string (This one is a Secret)
+PORT=5000
+JWT_SECRET=your_jwt_secret
+
+### Frontend (.env)
+
+REACT_APP_API_URL=<https://chat-app-v6gy.onrender.com/>
+
+---
+
+## 🧩 Monitoring and Maintenance
+
+We used **UptimeRobot** to monitor both frontend and backend uptime and performance.
+
+### 🔹 Frontend Monitoring (Vercel)
+
+![Frontend Monitoring](./screenshots/frontend_monitoring.png)
+
+### 🔹 Backend Monitoring (Render)
+
+![Backend Monitoring](./screenshots/backend_monitoring.png)
+
+- Both monitors check uptime every 5 minutes.
+- Alert notifications are sent on downtime.
+- SSL certificates and response times are tracked.
+
+---
+
+### 🌍 Live Uptime Status
+
+[View Live Status on UptimeRobot](https://stats.uptimerobot.com/TSqm3N1D7z)
+
+---
+
+## 🔮 Future Enhancements
+
+- Integrate Docker for containerized deployment.
+- Automate uptime checks with GitHub Actions.
+
+---
+
+MIT License
+
+Copyright (c) [2025] [Joseph Chege]
